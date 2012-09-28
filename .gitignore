@@ -2,3 +2,5 @@
 .DS_Store
 
 application/config/database.php
+
+application/logs/*.php
