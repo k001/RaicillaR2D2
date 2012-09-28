@@ -81,7 +81,7 @@
                         <a href="#">Inbox</a>
                         <a href="login.html" class="logout">Logout</a>
                     </div>
-                	<img src="img/profile-pict.jpg" alt="John Doe">
+                	<img src="/assets/img/profile-pict.jpg" alt="John Doe">
                 </div>
             </section>
             <section id="responsive-nav">

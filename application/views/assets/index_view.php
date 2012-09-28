@@ -65,7 +65,7 @@
 							
 								<div class="contents">
 									<div class="one-half username-half">
-										<label>Username</label>
+										<label><?=lang('admin_username')?></label>
 										<div class="field-box"><span class="icon awesome user for-input"></span><input type="text" class="w-icon validate[required]"></div>
 										<div class="clear"></div>
 									</div>
