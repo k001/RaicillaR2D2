@@ -6,10 +6,8 @@ class Admin extends CI_Controller{
 		parent::__construct();
 		//$this->output->enable_profiler(TRUE);
 		$this->load->language('spanish', 'spanish');
-	}
-	
-	public function login(){
-		
+		$this->load->model("campaign_model");
+		($this->campaign_model->is_logged()) ? true : redirect("/admin/users/login");
 	}
 	
 	public function index(){
@@ -17,8 +15,8 @@ class Admin extends CI_Controller{
 	}
 	
 	public	function dashboard(){
-		
 		$this->load->view("admin/charts_view");
 	}
 	
 }
+?>
