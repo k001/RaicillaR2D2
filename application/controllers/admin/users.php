@@ -2,20 +2,22 @@
 
 class Users extends CI_Controller{
 	
-	public function __construct(){
+	function __construct(){
 		parent::__construt();
-		$this->load->]model('users_model');	
+		$this->load->model('User');	
 	}	
 
-	public function index(){
+	function index(){
 
 	}
 
-	public function login(){
+	function login(){
 		$this->load->view("assets/index_view");
 	}
 
-	public function logout(){
+	function logout(){
 
 	}
 }
+
+?>
